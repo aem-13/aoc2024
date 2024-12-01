@@ -1,0 +1,1 @@
+# Advent of Code attempts 2024
