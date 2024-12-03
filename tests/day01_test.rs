@@ -1,4 +1,4 @@
-use aoc::day01::day01;
+use aoc::day01;
 
 #[test]
 fn part_one_test() {
