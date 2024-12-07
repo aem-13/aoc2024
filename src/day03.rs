@@ -36,15 +36,12 @@ pub fn part_two(input: &Input) -> i64 {
     for cap in re.captures_iter(&input) {
         match cap.get(0).map(|m| m.as_str()) {
             Some("don't()") => {
-                // println!("disabling");
                 enabled = false;
             }
             Some("do()") => {
-                // println!("enabling");
                 enabled = true;
             }
             Some(_) => {
-                // println!("{}", other);
                 if enabled {
                     sum += cap
                         .get(1)
