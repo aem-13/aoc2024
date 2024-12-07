@@ -16,7 +16,7 @@ fn part_one_test() {
 }
 
 #[test]
-fn part2_test() {
+fn part_two_test() {
     let input = String::from(EXAMPLE);
     assert_eq!(part_two(&input), 4);
 }
