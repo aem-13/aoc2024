@@ -1,6 +1,7 @@
 use aoc::day01;
 use aoc::day02;
 use aoc::day03;
+use aoc::day04;
 use aoc::utils::parse;
 
 fn main() {
@@ -23,10 +24,16 @@ fn main() {
     println!("Part Two: {}", day02::part_two(&input));
 
     let day03_path = String::from("input/day03.txt");
-    let input = match day02::parse(day03_path){
+    let input = match day03::parse(day03_path){
         Ok(res)=>res,
         Err(error) => panic!("Problem opening the file: {error:?}"),
     };
     println!("Part One: {}", day03::part_one(&input));
     println!("Part Two: {}", day03::part_two(&input));
+
+    let day04_path = "input/day04.txt";
+    let input = day04::parse(day04_path);
+    println!("Part One: {}", day04::part_one(&input));
+    println!("Part Two: {}", day04::part_two(&input));
+
 }
